@@ -29,15 +29,8 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.0.2.RELEASE</version>
         </dependency>
 
-        <!-- Feign实现声明式HTTP客户端 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-            <version>1.4.6.RELEASE</version>
-        </dependency>
 
         <!-- apollo 配置中心 -->
         <dependency>
@@ -81,7 +74,7 @@
         <dependency>
             <groupId>com.deepexi.common</groupId>
             <artifactId>optimus-common</artifactId>
-            <version>1.1.5-SNAPSHOT</version>
+            <version>1.1.6-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -118,18 +111,6 @@
         </dependency>
 
     </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>

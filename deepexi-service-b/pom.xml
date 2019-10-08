@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>deepexi-service-b-api</module>
         <module>deepexi-service-b-provider</module>
     </modules>
 
@@ -18,16 +17,28 @@
         <version>2.1.0.RELEASE</version>
     </parent>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>com.deepexi.common</groupId>
             <artifactId>optimus-common</artifactId>
-            <version>1.1.5-SNAPSHOT</version>
+            <version>1.1.6-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.0.6</version>
+            <version>3.0.7.1</version>
         </dependency>
     </dependencies>
 

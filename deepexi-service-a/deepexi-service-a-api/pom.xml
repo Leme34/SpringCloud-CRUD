@@ -10,6 +10,13 @@
     <artifactId>deepexi-service-a-api</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!--源码打包-->
